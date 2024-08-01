@@ -6,7 +6,7 @@ import { Header } from "@/Header/Header";
 import { Footer } from "@/Footer/Footer";
 import { Menu } from "@/Menu/Menu";
 import { Provider } from "react-redux";
-import { appStore } from "@/redux/appstore";
+import { appStore } from "@/redux/appStore";
 const inter = Inter({ subsets: ["latin"] });
 
 
@@ -37,6 +37,11 @@ export default function RootLayout({ children }) {
       id: 'photos',
       path: 'photos',
       text: 'Photos'
+    },
+    {
+      id: 'posts',
+      path: 'posts',
+      text: 'Posts'
     }
   ]
   return (
